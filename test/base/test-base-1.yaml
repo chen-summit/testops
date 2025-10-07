@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: test-base-1-secret
+  annotations:
+    avp.kubernetes.io/path: "kv/data/vplugin/supersecret"
+type: Opaque
+stringData:
+  username: <username>
+  password: <password>
